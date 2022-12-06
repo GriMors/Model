@@ -19,12 +19,16 @@ all_sprites = pygame.sprite.Group()
 model = Model()
 world = model.world
 
-v1 = Village([100, 100], 5, world)
-v2 = Village([500, 500], 20, world)
+v1 = Village([100, 450], 5, world)
+v2 = Village([200, 350], 10, world)
+v3 = Village([300, 250], 15, world)
+v4 = Village([400, 150], 20, world)
 a1 = Alien([300, 300], (100, 30), world)
 a2 = Alien([300, 300], (100, -30), world)
 all_sprites.add(v1.circle)
 all_sprites.add(v2.circle)
+all_sprites.add(v3.circle)
+all_sprites.add(v4.circle)
 all_sprites.add(a1.circle)
 all_sprites.add(a2.circle)
 
@@ -52,3 +56,5 @@ while running:
 
 pygame.quit()
 
+# Я просто что-нибудь напишу тут,
+# чтобы посмотреть, произойдет ли обновление, плюс добавлю еще пару деревень
