@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2df18c44-e854-416c-aab3-cc9832732335" name="Changes" comment="Берсерк, демоны и культы. Обзоры Б и Д по отношению к К. Встречи Б и Д с К, включая разбивание групп Д при встрече с К. Образование групп Д.">
-      <change beforePath="$PROJECT_DIR$/Model_with_Alien/alien.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Alien/body.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Alien/circle_actor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Alien/const.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Alien/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Alien/model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Alien/settler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Alien/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Alien/vector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Alien/village.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Alien/world.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/actor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/berserk.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/body.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/const.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/cult.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/demon.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/vector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/world.py" beforeDir="false" />
-    </list>
+    <list default="true" id="2df18c44-e854-416c-aab3-cc9832732335" name="Changes" comment="Берсерк, демоны и культы. Обзоры Б и Д по отношению к К. Встречи Б и Д с К, включая разбивание групп Д при встрече с К. Образование групп Д." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671462157848</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Берсерк, демоны и культы. Обзоры Б и Д по отношению к К. Встречи Б и Д с К, включая разбивание групп Д при встрече с К. Образование групп Д.">
+      <created>1671462271436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671462271436</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Берсерк, демоны и культы. Обзоры Б и Д по отношению к К. Встречи Б и Д с К, включая разбивание групп Д при встрече с К. Образование групп Д.">
+      <created>1671462280708</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671462280708</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
