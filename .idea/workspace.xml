@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2df18c44-e854-416c-aab3-cc9832732335" name="Changes" comment="">
+    <list default="true" id="2df18c44-e854-416c-aab3-cc9832732335" name="Changes" comment="Добавление нескольких деревень ради проверки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Alien/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Alien/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/berserk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/berserk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/body.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/body.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/const.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/cult.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/cult.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/demon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/demon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/world.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/world.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +22,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2IWmTkKGEtrGVWDZkl0w77LrunF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -25,9 +40,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Models" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -41,6 +57,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model_with_Berserk/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Models" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Model_with_Berserk/Model_with_Berserk__14-12-2022" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model_with_Berserk/Model_with_Berserk__14-12-2022/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Models" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Model_with_Berserk/Model_with_Berserk__19-12-2022" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model_with_Berserk/Model_with_Berserk__19-12-2022/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -72,8 +130,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main (3)" />
+        <item itemvalue="Python.main (2)" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -86,6 +146,14 @@
       <option name="presentableId" value="Default" />
       <updated>1670305723519</updated>
     </task>
+    <task id="LOCAL-00001" summary="Добавление нескольких деревень ради проверки">
+      <created>1670311881277</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670311881277</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,5 +167,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавление нескольких деревень ради проверки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление нескольких деревень ради проверки" />
   </component>
 </project>

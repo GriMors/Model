@@ -1,6 +1,7 @@
-from vector import Vector
 import const
 import math
+from vector import Vector
+
 
 class Body:
 
@@ -12,6 +13,8 @@ class Body:
         self.parent = parent
         self.type = type(parent)
         self.deleted = False
+        self.see = False
+        self.meet = False
 
     def set_velocity(self, v):
         self.velocity = Vector(v[0], v[1])

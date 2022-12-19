@@ -1,17 +1,18 @@
+import const
 from body import Body
 from actor import Actor
-import const
+
 
 class Cult:
 
-    def __init__(self, pos, count, world):
+    def __init__(self, pos, demons, world):
         self.body = Body(pos, const.RADIUS_C, const.VELOCITY_C, self)
         self.circle = Actor(self.body, const.COLOR_C)
         self.view_body = Body(pos, const.RADIUS_C, const.VELOCITY_C, self)
         world.add_body(self.body)
         self.world = world
         self.ch_dt = 0
-        self.settlers = count
+        self.settlers = demons
 
     def __eq__(self, other):
         return (self.body.pos == other.body.pos,
@@ -20,7 +21,7 @@ class Cult:
                 self.body.velocity.alpha == other.body.velocity.alpha)
 
     def population(self):
-        self.settlers < const.MAX_POPULATION
+        return self.settlers < const.MAX_POPULATION
 
     def update(self, dt):
         if self.population:

@@ -1,18 +1,21 @@
+import const
 from body import Body
 from actor import Actor
-import const
+
 
 class Demon:
 
-    def __init__(self, pos, v, world):
-        self.body = Body(pos, const.RADIUS_D, v, self)
+    def __init__(self, pos, rad, v, count, world):
+        self.body = Body(pos, rad, v, self)
         self.circle = Actor(self.body, const.COLOR_D)
-        self.view_body = Body(pos, const.RADIUS_D*10, v, self)
+        self.view_body = Body(pos, rad*10, v, self)
         world.add_body(self.body)
         self.world = world
+        self.count = count
 
     def __eq__(self, other):
         return (self.body.pos == other.body.pos,
                 self.body.rad == other.body.rad,
                 self.body.velocity.lenght == other.body.velocity.lenght,
-                self.body.velocity.alpha == other.body.velocity.alpha)
+                self.body.velocity.alpha == other.body.velocity.alpha,
+                self.count == other.count)
