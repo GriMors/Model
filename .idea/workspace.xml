@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2df18c44-e854-416c-aab3-cc9832732335" name="Changes" comment="Добавление нескольких деревень ради проверки">
+    <list default="true" id="2df18c44-e854-416c-aab3-cc9832732335" name="Changes" comment="Берсерк, демоны и культы. Обзоры Б и Д по отношению к К. Встречи Б и Д с К, включая разбивание групп Д при встрече с К. Образование групп Д.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/berserk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/berserk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/body.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/body.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/const.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/cult.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/cult.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/demon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/demon.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_with_Berserk/world.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model_with_Berserk/world.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670311881277</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Берсерк, демоны и культы. Обзоры Б и Д по отношению к К. Встречи Б и Д с К, включая разбивание групп Д при встрече с К. Образование групп Д.">
+      <created>1671461112776</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671461112776</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +169,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавление нескольких деревень ради проверки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление нескольких деревень ради проверки" />
+    <MESSAGE value="Берсерк, демоны и культы. Обзоры Б и Д по отношению к К. Встречи Б и Д с К, включая разбивание групп Д при встрече с К. Образование групп Д." />
+    <option name="LAST_COMMIT_MESSAGE" value="Берсерк, демоны и культы. Обзоры Б и Д по отношению к К. Встречи Б и Д с К, включая разбивание групп Д при встрече с К. Образование групп Д." />
   </component>
 </project>
