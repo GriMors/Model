@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2df18c44-e854-416c-aab3-cc9832732335" name="Changes" comment="Берсерк, демоны и культы. Обзоры Б и Д по отношению к К. Встречи Б и Д с К, включая разбивание групп Д при встрече с К. Образование групп Д." />
+    <list default="true" id="2df18c44-e854-416c-aab3-cc9832732335" name="Changes" comment="Берсерк, демоны и культы. Обзоры Б и Д по отношению к К. Встречи Б и Д с К, включая разбивание групп Д при встрече с К. Образование групп Д.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/berserk.py" beforeDir="false" afterPath="$PROJECT_DIR$/berserk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/body.py" beforeDir="false" afterPath="$PROJECT_DIR$/body.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/const.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cult.py" beforeDir="false" afterPath="$PROJECT_DIR$/cult.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demon.py" beforeDir="false" afterPath="$PROJECT_DIR$/demon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/world.py" beforeDir="false" afterPath="$PROJECT_DIR$/world.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +44,7 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.main (4)">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Models" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,6 +108,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main (4)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Models" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Models" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,6 +152,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (4)" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main (3)" />
         <item itemvalue="Python.main (2)" />
@@ -171,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671462280708</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Берсерк, демоны и культы. Обзоры Б и Д по отношению к К. Встречи Б и Д с К, включая разбивание групп Д при встрече с К. Образование групп Д.">
+      <created>1671462984925</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671462984925</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -8,7 +8,6 @@ from cult import Cult
 from berserk import Berserk
 from demon import Demon
 
-
 # инициировали pygame
 pygame.init()
 # создали экран заданного размера
@@ -21,32 +20,14 @@ clock = pygame.time.Clock()
 model = Model()
 world = model.world
 
+# Primary condition 1:
+for i in range(20):
+    c = Cult([uniform(20, 685), uniform(20, 685)], int(uniform(1, 30)), world)
+for i in range(1):
+    berserk = Berserk([uniform(30, 670), uniform(30, 670)], (200, uniform(0, 360)), world)
 
-# Primary condition:
-# c1 = Cult([480, 450], 25, world)
-# c2 = Cult([420, 450], 24, world)
-# c1 = Cult([200, 500], 25, world)
-c2 = Cult([500, 400], 24, world)
-#
-# c1 = Cult([uniform(20, 685), uniform(20, 685)], int(uniform(1, 30)), world)
-# c2 = Cult([uniform(20, 685), uniform(20, 685)], int(uniform(1, 30)), world)
-# c3 = Cult([uniform(20, 685), uniform(20, 685)], int(uniform(1, 30)), world)
-# c4 = Cult([uniform(20, 685), uniform(20, 685)], int(uniform(1, 30)), world)
-# c5 = Cult([uniform(20, 685), uniform(20, 685)], int(uniform(1, 30)), world)
-# c6 = Cult([uniform(20, 685), uniform(20, 685)], int(uniform(1, 30)), world)
-# c7 = Cult([uniform(20, 685), uniform(20, 685)], int(uniform(1, 30)), world)
-# c8 = Cult([uniform(20, 685), uniform(20, 685)], int(uniform(1, 30)), world)
-# c9 = Cult([uniform(20, 685), uniform(20, 685)], int(uniform(1, 30)), world)
-# c10 = Cult([uniform(20, 685), uniform(20, 685)], int(uniform(1, 30)), world)
-# c11 = Cult([600, 300], int(34), world)
-#
-# berserk = Berserk([100, 100], (200, uniform(0, 360)), world)
-# berserk = Berserk([200, 200], (160, 35), world)
-#
-# d1 = Demon([460, 300], const.RADIUS_D, (40, 90), 1, world)
-d2 = Demon([100, 300], const.RADIUS_D*1.5, (50, 0), 2, world)
-d3 = Demon([300, 320], const.RADIUS_D, (50, 180), 1, world)
-
+# d2 = Demon([100, 320], const.RADIUS_D+10**(1/3), (50, 0), 33, world)
+# d3 = Demon([300, 300], const.RADIUS_D+const.COUNT_D**(1/3), (50, 180), const.COUNT_D, world)
 
 running = True
 t1 = time.time()

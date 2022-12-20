@@ -2,13 +2,12 @@ import const
 from body import Body
 from actor import Actor
 
-
 class Berserk:
 
     def __init__(self, pos, v, world):
         self.body = Body(pos, const.RADIUS_B, v, self)
         self.circle = Actor(self.body, const.COLOR_B)
-        self.view_body = Body(pos, const.RADIUS_B*5, v, self)
+        self.view_body = Body(pos, const.RADIUS_VB, v, self)
         world.add_body(self.body)
         self.world = world
         self.power = const.POWER

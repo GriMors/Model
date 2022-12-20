@@ -9,7 +9,6 @@ from world import World
 from vector import Vector
 all_sprites = pygame.sprite.Group()
 
-
 class Model:
 
     def __init__(self):
@@ -22,54 +21,53 @@ class Model:
             if type(object2) == Berserk:
                 self.fight(object1, object2)
             elif type(object2) == Demon:
-                if object2.body.meet != True:
+                if object2.body.meet == False:
                     object2.body.meet = True
                     self.join_in_cult(object1, object2)
         if type(object1) == Demon:
             if type(object2) == Demon:
-                if self.world.time > self.time + 1:
-                    if object1.body.meet != True:
-                        object1.body.meet = True
-                        if object2.body.meet != True:
-                            object2.body.meet = True
-                            self.create_group(object1, object2)
+                if self.world.time > self.time + 0.5:
+                        self.create_group(object1, object2)
 
     # вступление демонов в культ
     def join_in_cult(self, object1, object2):
         if object1.population():
             count_in_cult = const.MAX_POPULATION - object1.settlers
-            # print('object1.settlers-1', object1.settlers)
             if count_in_cult < object2.count:
                 object1.settlers += count_in_cult
-                # print('object1.settlers-2', object1.settlers)
-                self.seraration_group(object2, count_in_cult)
+                self.separation_group(object2, count_in_cult)
             else:
                 object1.settlers += object2.count
                 object2.body.deleted = True
                 object2.circle.kill()
+        object2.body.meet = False
 
     # создание групп демонов
     def create_group(self, object1, object2):
         pos = object1.body.pos
-        v = [200, uniform(0, 360)]
-        # v = [100, 0]
-        rad = object1.body.rad
+        v = [const.VELOCITY_D, uniform(0, 360)]
         count1 = object1.count
         count2 = object2.count
-        Demon([pos[0], pos[1]], rad + 0.5 * const.RADIUS_D * count2, v, count1 + count2, self.world)
+        sum = count1 + count2
+        if sum >= const.MAX_POPULATION:
+            count_demon = sum - const.MAX_POPULATION
+            Cult([pos[0], pos[1]], const.MAX_POPULATION, self.world)
+            if count_demon > 0:
+                Demon([pos[0], pos[1]], const.RADIUS_D + count_demon ** (1/3), v, count_demon, self.world)
+        else:
+            Demon([pos[0], pos[1]], const.RADIUS_D + sum ** (1/3), v, sum, self.world)
         object1.body.deleted = True
         object1.circle.kill()
         object2.body.deleted = True
         object2.circle.kill()
 
     # разделение групп демонов
-    def seraration_group(self, object, count_in_cult):
+    def separation_group(self, object, count_in_cult):
         pos = object.body.pos
-        v = [200, uniform(0, 360)]
-        # v = [100, 0]
-        rad = object.body.rad
+        v = [const.VELOCITY_D, uniform(0, 360)]
         count = object.count
-        Demon([pos[0], pos[1]], rad - const.RADIUS_D*count_in_cult*0.5, v, count - count_in_cult, self.world)
+        new_count = count - count_in_cult
+        Demon([pos[0], pos[1]], const.RADIUS_D + new_count ** (1/3), v, new_count, self.world)
         object.body.deleted = True
         object.circle.kill()
 
@@ -97,7 +95,7 @@ class Model:
         if object1.settlers > 0:
             pos = object1.body.pos
             for i in range(object1.settlers):
-                Demon([pos[0], pos[1]], const.RADIUS_D, [200, uniform(20, 685)], 1, self.world)
+                Demon([pos[0], pos[1]], const.RADIUS_D + const.COUNT_D ** (1/3), [const.VELOCITY_D, uniform(20, 685)], const.COUNT_D, self.world)
         object1.body.deleted = True
         object1.circle.kill()
 
@@ -109,16 +107,12 @@ class Model:
         elif type(object1) == Demon:
             if type(object2) == Cult:
                 self.detection_BorDandC(object1, object2)
-        # elif type(object1) == Demon:
-        #     if type(object2) == Demon:
-        #         # self.detection_BorDandC(object1, object2)
-        #         if object1.body.see != True:
-        #             object1.body.see = True
-        #             self.turn(object1.body, object2.body)
+            elif type(object2) == Demon:
+                self.detection_BorDandC(object1, object2)
 
     # "заметил - повернул"
     def detection_BorDandC(self, object1, object2):
-        if object1.body.see != True:
+        if object1.body.see == False:
             object1.body.see = True
             self.turn(object1.body, object2.body)
 
@@ -131,7 +125,11 @@ class Model:
             sign = dy / abs(dy)
         except ZeroDivisionError:
             sign = 1
-        a = sign * math.acos(dx / l) * 180 / math.pi
+        try:
+            a = sign * math.acos(dx / l) * 180 / math.pi
+        except ZeroDivisionError:
+            a = sign * math.acos(dx / 1) * 180 / math.pi
+        # a = sign * math.acos(dx / l) * 180 / math.pi
         l = bd_1.velocity.lenght
         bd_1.velocity = Vector(l, a)
 
@@ -140,4 +138,3 @@ class Model:
         if type(object) == Cult:
             if object.population():
                 object.update(dt)
-                # print('demons: ', object.settlers)

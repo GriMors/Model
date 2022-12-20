@@ -2,7 +2,6 @@ import const
 import math
 from vector import Vector
 
-
 class Body:
 
     def __init__(self, pos, rad, v, parent):

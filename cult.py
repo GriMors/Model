@@ -2,17 +2,16 @@ import const
 from body import Body
 from actor import Actor
 
-
 class Cult:
 
     def __init__(self, pos, demons, world):
         self.body = Body(pos, const.RADIUS_C, const.VELOCITY_C, self)
         self.circle = Actor(self.body, const.COLOR_C)
-        self.view_body = Body(pos, const.RADIUS_C, const.VELOCITY_C, self)
+        self.view_body = Body(pos, 0, const.VELOCITY_C, self)
         world.add_body(self.body)
+        self.settlers = demons
         self.world = world
         self.ch_dt = 0
-        self.settlers = demons
 
     def __eq__(self, other):
         return (self.body.pos == other.body.pos,

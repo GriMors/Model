@@ -10,6 +10,8 @@ class World:
         self.model = model
         self.all_sprites = all_sprites
         self.time = 0
+        self.demons = []
+        self.cults = []
 
     # добавление тела и спрайта
     def add_body(self, b):
@@ -25,13 +27,8 @@ class World:
         self.time_to_turn(dt)
         self.collisions()
         for b in self.bodies:
-            # print(self.bodies)
-            # if type(b.parent) == Demon:
-            #     print('b.parent.body.rad', b.parent.body.rad)
-            #     print('b.parent.count', b.parent.count)
             if type(b.parent) == Cult:
                 self.model.life(b.parent, dt)
-                # print('b.parent.settlers', b.parent.settlers)
             if b.deleted:
                 self.remove(b)
             if not self.time and not b.see:
@@ -41,16 +38,22 @@ class World:
 
     # обработка пересечений тел (взаимодействий)
     def collisions(self):
+        # l = len(self.bodies)
+        # for i in range(l):
         for i in range(len(self.bodies)):
             b1 = self.bodies[i]
+            if b1.deleted:
+                continue
             v1 = b1.parent.view_body
+            # for j in range(i+1, l):
             for j in range(i+1, len(self.bodies)):
                 b2 = self.bodies[j]
+                if b2.deleted:
+                    continue
                 v2 = b2.parent.view_body
                 # if b1.intersect(b2) and not (b1 in b2.inter):
                 #     b1.add_inter(b2)
                 #     b2.add_inter(b1)
-                #     self.model.collision(b1.parent, b2.parent)
                 if b1.intersect(b2):
                     self.model.collision(b1.parent, b2.parent)
                 elif v1.intersect(b2):
