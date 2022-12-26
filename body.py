@@ -37,11 +37,10 @@ class Body:
                 sign = d[1] / abs(d[1])
             except ZeroDivisionError:
                 sign = 1
-            a = sign * math.acos(d[0] / l) * 180 / math.pi
+            try:
+                a = sign * math.acos(d[0] / l) * 180 / math.pi
+            except ZeroDivisionError:
+                a = sign * math.acos(d[0] / 1) * 180 / math.pi
             self.velocity = Vector(l, a)
-        for bd in self.inter:
-            if not (bd.intersect(self)):
-                self.inter.remove(bd)
-                bd.inter.remove(self)
         self.pos[0] += d[0] * dt
         self.pos[1] += d[1] * dt

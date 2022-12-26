@@ -9,6 +9,3 @@ class Vector:
         dx = self.lenght*math.cos(self.alpha)
         dy = self.lenght*math.sin(self.alpha)
         return ([dx, dy])
-
-    def __str__(self):
-        return (f'({self.lenght}, {self.alpha})')

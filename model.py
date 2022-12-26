@@ -7,13 +7,13 @@ from berserk import Berserk
 from demon import Demon
 from world import World
 from vector import Vector
-all_sprites = pygame.sprite.Group()
 
 class Model:
 
     def __init__(self):
-        self.world = World(self, all_sprites)
+        self.world = World(self)
         self.time = 0
+        self.time_of_life = 0
 
     # взаимодействия в мире
     def collision(self, object1, object2):
@@ -39,7 +39,6 @@ class Model:
             else:
                 object1.settlers += object2.count
                 object2.body.deleted = True
-                object2.circle.kill()
         object2.body.meet = False
 
     # создание групп демонов
@@ -57,9 +56,7 @@ class Model:
         else:
             Demon([pos[0], pos[1]], const.RADIUS_D + sum ** (1/3), v, sum, self.world)
         object1.body.deleted = True
-        object1.circle.kill()
         object2.body.deleted = True
-        object2.circle.kill()
 
     # разделение групп демонов
     def separation_group(self, object, count_in_cult):
@@ -69,7 +66,6 @@ class Model:
         new_count = count - count_in_cult
         Demon([pos[0], pos[1]], const.RADIUS_D + new_count ** (1/3), v, new_count, self.world)
         object.body.deleted = True
-        object.circle.kill()
 
     # сражение Берсерка с культом
     def fight(self, object1, object2):
@@ -83,7 +79,6 @@ class Model:
     # гибель Берсерка
     def death_B(self, object1, object2):
             object2.body.deleted = True
-            object2.circle.kill()
             n = object1.settlers
             object1.settlers -= int(2 * const.POWER - n)
 
@@ -97,7 +92,6 @@ class Model:
             for i in range(object1.settlers):
                 Demon([pos[0], pos[1]], const.RADIUS_D + const.COUNT_D ** (1/3), [const.VELOCITY_D, uniform(20, 685)], const.COUNT_D, self.world)
         object1.body.deleted = True
-        object1.circle.kill()
 
     # обзор тел
     def detection(self, object1, object2):
@@ -129,7 +123,6 @@ class Model:
             a = sign * math.acos(dx / l) * 180 / math.pi
         except ZeroDivisionError:
             a = sign * math.acos(dx / 1) * 180 / math.pi
-        # a = sign * math.acos(dx / l) * 180 / math.pi
         l = bd_1.velocity.lenght
         bd_1.velocity = Vector(l, a)
 
